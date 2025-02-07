@@ -14,28 +14,25 @@
 <script>
     let letter = prompt("Enter the first letter of week day :");
 
-    switch (letter) {
-        case 'M':
-            document.write("Monday");
-            break;
-        case 'T':
-            document.write("Tuesday");
-            break;
-        case 'W':
-            document.write("Wednesday");
-            break;
-        case 't':
-            document.write("thursday");
-            break;
-        case 'F':
-            document.write("Friday");
-            break;
-        case 'S':
-            document.write("Saturday");
-            break;
-        default:
-            document.write("Invalid Choice ....");
+
+    if (letter == 'M') {
+        document.write("Monday");
+    } else if (letter == ' T') {
+        document.write("Tuesday");
+    } else if (letter == 'W') {
+        document.write("Wednesday");
+    } else if (letter == 't') {
+        document.write("thursday");
+    } else if (letter == 'F') {
+        document.write("Friday");
+    } else if (letter == 'S') {
+        document.write("Saturday");
+    } else if (letter == 's') {
+        document.write("sunday");
+    } else {
+        document.write("Invalid Choice ...");
     }
+
 </script>
 
 </html>
