@@ -12,36 +12,47 @@
 </body>
 
 <script>
-    let n = parseInt(prompt("Enter the size of array :-"));
+    //let n = parseInt(prompt("Enter the size of array :-"));
 
-    let a = [];
+    // let a = [];
 
-    document.write("Input Array :-");
+    // document.write("Input Array :-");
 
-    for (let i = 0; i < n; i++) {
-        a[i] = parseInt(prompt(`the index of  ${i}`));
+    // for (let i = 0; i < n; i++) {
+    //     a[i] = parseInt(prompt(`the index of  ${i}`));
 
-    }
+    // }
 
-    for (let i = 0; i < n; i++) {
-        document.write(`${a[i]}` + "&nbsp;");
-    }
+    // for (let i = 0; i < n; i++) {
+    //     document.write(`${a[i]}` + "&nbsp;");
+    // }
 
-    document.write("<br>");
+    // document.write("<br>");
 
-    let user = parseInt(prompt("Enter the value ? which value insert into array"));
-    let pos = parseInt(prompt("Enter the index ?"));
+    // let user = parseInt(prompt("Enter the value ? which value insert into array"));
+    // let pos = parseInt(prompt("Enter the index ?"));
 
+
+    let a = [10, 20, 40, 50];
+    let pos = 2;
+    let value = 30;
+    let n = a.length;
+
+
+    // for (let i = n; i > pos; i--) {
+    //     a[i] = a[i - 1];
+    // }
 
     for (let i = pos; i < n; i++) {
-        a[i + 1] = a[i];
+        a[i] = a[i + 1];
     }
-    n++;
-    a[pos] = user;
 
-    for (let i = 0; i < n; i++) {
-        document.write(`${a[i]}` + "&nbsp;");
-    }
+    a[pos] = value;
+    n++;
+
+    console.log(a);
+
+    document.write(a);
 
 
 
