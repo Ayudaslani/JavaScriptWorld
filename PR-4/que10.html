@@ -37,8 +37,37 @@
     document.write("Take something Return Nothing <br>");
     TSRN(age);
     document.write("<br>");
+    document.write("<br>");
 
-    
+    function TSRS(age) {
+        if (age >= 18) {
+            document.write(`You can Eligible for vote`);
+        } else {
+            document.write(`You can not Eligible for vote`);
+        }
+
+        return [age];
+    }
+
+    document.write("Take something Return something <br>");
+    TSRS(age);
+    document.write("<br><br>");
+
+
+    function TNRS() {
+        if (age >= 18) {
+            document.write(`You can Eligible for vote`);
+        } else {
+            document.write(`You can not Eligible for vote`);
+        }
+
+        return [age];
+    }
+
+    document.write("Take nothing Return something <br>");
+    TSRS();
+
+
 
 
 </script>

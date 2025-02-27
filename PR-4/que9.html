@@ -39,6 +39,7 @@
     document.write("Take nothing return nothing ..<br>");
     TNRN();
     document.write("<br>");
+    document.write("<br>");
 
     function TSRN(side1, side2, side3) {
         if (side1 + side2 > side3) {
@@ -61,6 +62,58 @@
     document.write("Take something return nothing ..<br>");
     TSRN(side1, side2, side3);
 
+    document.write("<br>")
+    document.write("<br>")
+
+
+    function TNRS() {
+        if (side1 + side2 > side3) {
+            if (side1 + side3 > side2) {
+                if (side2 + side3 > side1) {
+                    document.write(`Triangle is  vaild ...`);
+                } else {
+                    document.write(`Triangle is not vaild ...`);
+                }
+
+            } else {
+                document.write(`Triangle is not vaild ...`);
+
+            }
+
+        } else {
+            document.write(`Triangle is not vaild ...`);
+        }
+
+        return [side1, side2, side3];
+    }
+    document.write("Take nothing return something ..<br>");
+    TNRS();
+
+    document.write("<br>")
+    document.write("<br>")
+
+    function TSRS(side1, side2, side3) {
+        if (side1 + side2 > side3) {
+            if (side1 + side3 > side2) {
+                if (side2 + side3 > side1) {
+                    document.write(`Triangle is  vaild ...`);
+                } else {
+                    document.write(`Triangle is not vaild ...`);
+                }
+
+            } else {
+                document.write(`Triangle is not vaild ...`);
+
+            }
+
+        } else {
+            document.write(`Triangle is not vaild ...`);
+        }
+
+        return [side1, side2, side3];
+    }
+    document.write("Take something return something ..<br>");
+    TSRS(side1, side2, side3);
 
 </script>
 
