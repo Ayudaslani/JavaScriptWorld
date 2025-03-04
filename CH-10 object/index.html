@@ -13,6 +13,7 @@
     <h2 id="name"></h2>
     <h2 id="age"></h2>
     <h2 id="course"></h2>
+    <h2 id="address"></h2>
 </body>
 
 <script>
@@ -60,10 +61,19 @@
 
     console.log(obj);
 
+
+    obj.address = "abc circle surat"
+    obj.address = "abc circle "
+
+    delete obj.address;
+
+
+
     document.getElementById('id').innerHTML = `id : ${obj.id}`;
     document.getElementById('name').innerHTML = `name : ${obj.name}`;
     document.getElementById('age').innerHTML = `age : ${obj.age}`;
     document.getElementById('course').innerHTML = `course : ${obj.course}`;
+    document.getElementById('address').innerHTML = `address : ${obj.address}`;
 
 
     console.log(obj.hasOwnProperty("name"));
