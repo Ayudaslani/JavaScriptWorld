@@ -78,6 +78,8 @@
                         <option value="manager">manager</option>
 
                     </select>
+
+                    <button id="reset" onclick="reset()" style="padding: 5px 20px 5px 20px">Reset</button>
                 </div>
             </div>
         </div>
@@ -111,6 +113,8 @@
             </div>
         </div>
     </section>
+
+
 
 
 
@@ -315,6 +319,20 @@
         document.getElementById('user').innerHTML = tbl;
         document.getElementById('total').innerHTML = `Total Salary :- ${sum}`;
     };
+
+
+    const reset = () => {
+        alert("ok");
+        document.getElementById('city').value = '0';
+        document.getElementById('designation').value = '0';
+        document.getElementById('salary').value = '0';
+        document.getElementById('Department').value = '0';
+        document.getElementById('total').innerHTML = `${sum}`;
+        document.getElementById('user').innerHTML = tbl;
+
+    }
+
+
 
 
 </script>
