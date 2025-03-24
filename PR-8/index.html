@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        button {
+            padding: 15px 45px;
+            background-color: green;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            font-weight: 700;
+            margin-right: 20px;
+            margin-top: 10px;
+
+        }
+
+        input {
+            padding: 15px 5px;
+            width: 120px;
+            border: none;
+            color: black;
+            background-color: pink;
+            border-radius: 10px;
+            font-weight: 700;
+            margin-right: 20px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body align="center">
+
+    <h1>Counter App</h1>
+
+    <button onclick="add()">+</button>
+    <input type="text" id="count">
+    <button onclick="sub()">-</button><br>
+    <button onclick="reset()" id="reset">Reset</button>
+    <script type="text/javascript">
+
+        let count = 0;
+        let countText = document.getElementById("count");
+        const add = () => {
+            count++;
+        }
+        const sub = () => {
+            count--;
+        }
+        const reset = () => {
+            count = 0;
+        }
+        setInterval(() => {
+            countText.value = count;
+
+        }, 100)
+    </script>
+
+</body>
+
+</html>
